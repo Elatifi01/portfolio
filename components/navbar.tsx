@@ -15,7 +15,7 @@ export default function Navbar() {
           className="text-xl font-black tracking-[-0.06em] sm:text-2xl"
           aria-label="Haitam El Atifi, home"
         >
-          h.el atifi.
+          h.el atifi<span className="text-[var(--accent)]">.</span>
         </a>
 
         <nav

@@ -7,7 +7,7 @@ const testimonials = [
       "Professional, reliable, and highly skilled. He transformed our design ideas into a fully functional and smooth website. The performance and user experience improved significantly.",
   },
   {
-    name: "MOhammed",
+    name: "Mohammed",
     role: "Founder, CloudSync Solutions",
     initials: "MO",
     quote:
@@ -16,7 +16,7 @@ const testimonials = [
   {
     name: "Ismail Elimlahi",
     role: "Marketing Director, GrowthPeak",
-    initials: "AR",
+    initials: "IE",
     quote:
       "An excellent web developer who truly understands modern web technologies. The website he delivered was clean, optimized, and mobile-friendly. I would definitely work with him again on future projects.",
   },

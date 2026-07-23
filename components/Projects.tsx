@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
+import ArrowUpRightIcon from "./ArrowUpRightIcon";
 
 const projects = [
   {
@@ -125,8 +126,11 @@ export default function Projects() {
                       className="inline-flex items-center gap-3 text-sm font-bold"
                     >
                       View project
-                      <span className="grid size-9 place-items-center rounded-full bg-[var(--ink)] text-[var(--paper)] transition-transform duration-300 group-hover:rotate-45">
-                        ↗
+                      <span
+                        aria-hidden="true"
+                        className="grid size-9 place-items-center rounded-full bg-[var(--ink)] text-[var(--paper)]"
+                      >
+                        <ArrowUpRightIcon className="size-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                       </span>
                     </a>
                   </div>

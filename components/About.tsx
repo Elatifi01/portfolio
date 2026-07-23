@@ -1,21 +1,21 @@
 const principles = [
   {
     number: "01",
-    title: "Purpose before pixels",
+    title: "Where I started",
     description:
-      "Every screen and feature should solve a real problem. I keep the why visible while building the how.",
+      "Curiosity got me here. What began as debugging small web pages during my first internships turned into building full applications end-to-end",
   },
   {
     number: "02",
-    title: "Simple scales better",
+    title: "What drives me",
     description:
-      "Clear architecture and focused interfaces make products easier to use, maintain, and grow.",
+      "I like solving real problems for real people, not just shipping features. I care about the outcome as much as the code behind it.",
   },
   {
     number: "03",
-    title: "Details build trust",
+    title: "How I build",
     description:
-      "Performance, accessibility, responsive behavior, and polish are part of the product—not an afterthought.",
+      "Rigorous, curious, and detail-oriented. I move comfortably between backend logic and frontend polish, and I believe clean architecture today saves headaches tomorrow.",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function About() {
           data-scroll-reveal="intro"
         >
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-[var(--muted)]">
-            03 / How I work
+            03 / About
           </p>
           <div>
             <p className="max-w-5xl text-[clamp(2.5rem,5.8vw,6rem)] font-black leading-[0.94] tracking-[-0.065em]">

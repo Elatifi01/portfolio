@@ -146,11 +146,21 @@ export default function Services() {
                       aria-hidden="true"
                       className={`grid size-10 place-items-center rounded-full border text-lg transition-all duration-500 ${
                         isActive
-                          ? "rotate-45 border-[var(--accent)] bg-[var(--accent)] text-[var(--ink)]"
+                          ? "border-[var(--accent)] bg-[var(--accent)] text-[var(--ink)]"
                           : "border-white/35 text-white/65"
                       }`}
                     >
-                      ↗
+                      <svg
+                        className="size-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeWidth="2"
+                      >
+                        <path d="M5 12h14" />
+                        {!isActive && <path d="M12 5v14" />}
+                      </svg>
                     </span>
                   </span>
 

@@ -1,3 +1,5 @@
+import ArrowUpRightIcon from "./ArrowUpRightIcon";
+
 export default function Footer() {
   return (
     <footer
@@ -24,12 +26,12 @@ export default function Footer() {
           </h2>
           <a
             href="mailto:elatifi.haitam@gmail.com"
-            className="group grid size-24 shrink-0 place-items-center rounded-full bg-[var(--ink)] text-3xl text-[var(--accent)] transition-transform duration-300 hover:rotate-45 sm:size-32"
+            className="group grid size-24 shrink-0 place-items-center rounded-full bg-[var(--ink)] text-[var(--accent)] sm:size-32"
             aria-label="Email Haitam El Atifi"
             data-scroll-reveal="content"
             data-reveal-order="2"
           >
-            ↗
+            <ArrowUpRightIcon className="size-8 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 sm:size-10" />
           </a>
         </div>
 

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ArrowUpRightIcon from "./ArrowUpRightIcon";
 
 const socialLinks = [
   {
@@ -74,7 +75,7 @@ export default function HeroSection() {
               aria-hidden="true"
               className="transition-transform duration-300 group-hover:translate-x-1"
             >
-              ↗
+              <ArrowUpRightIcon className="size-4" />
             </span>
           </a>
         </div>

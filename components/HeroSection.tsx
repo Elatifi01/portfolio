@@ -90,7 +90,7 @@ export default function HeroSection() {
         </h1>
 
         <div
-          className="hero-portrait relative left-1/2 z-10 mt-24 w-[min(104vw,34rem)] -translate-x-1/2 sm:mt-20 lg:absolute lg:bottom-[-14rem] lg:mt-0 lg:w-[min(46vw,44rem)]"
+          className="hero-portrait absolute inset-y-0 left-1/2 z-10 aspect-[1122/1402] -translate-x-1/2 lg:inset-y-auto lg:bottom-[-14rem] lg:w-[min(46vw,44rem)]"
           data-scroll-reveal="content"
           data-reveal-order="2"
         >
@@ -105,12 +105,12 @@ export default function HeroSection() {
             height={1402}
             priority
             sizes="(max-width: 1023px) 100vw, 46vw"
-            className="relative z-10 h-auto w-full"
+            className="relative z-10 h-full w-full"
           />
         </div>
 
         <div
-          className="relative z-30 -mt-8 flex items-end justify-between gap-6 pb-8 sm:-mt-12 lg:absolute lg:inset-x-[3.5%] lg:bottom-8 lg:mt-0 lg:pb-0"
+          className="absolute inset-x-6 bottom-8 z-30 flex items-end justify-between gap-6 sm:inset-x-10 lg:inset-x-[3.5%]"
           data-scroll-reveal="content"
           data-reveal-order="3"
         >

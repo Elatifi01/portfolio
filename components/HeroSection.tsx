@@ -46,15 +46,15 @@ const socialLinks = [
 export default function HeroSection() {
   return (
     <section
-      className="relative isolate min-h-[100svh] overflow-hidden bg-[var(--paper)] pt-20 text-[var(--ink)]"
+      className="relative isolate min-h-[100svh] overflow-hidden bg-[var(--paper)] pt-[var(--navbar-height)] text-[var(--ink)]"
       id="home"
     >
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-20 h-px bg-[var(--line)]/70"
+        className="absolute inset-x-0 top-[var(--navbar-height)] h-px bg-[var(--line)]/70"
       />
 
-      <div className="relative mx-auto min-h-[calc(100svh-5rem)] max-w-[1600px] px-6 sm:px-10 lg:px-14 xl:px-20">
+      <div className="relative mx-auto min-h-[calc(100svh-var(--navbar-height))] max-w-[1600px] px-6 sm:px-10 lg:px-14 xl:px-20">
         <div
           className="hero-copy relative z-30 max-w-xs pt-12 sm:pt-16 lg:absolute lg:left-[6%] lg:top-[21%] lg:pt-0"
           data-scroll-reveal="intro"

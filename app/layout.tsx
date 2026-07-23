@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 
@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   description,
   applicationName: "Haitam El Atifi",
   manifest: "/assets/favicon_io/site.webmanifest",
+  appleWebApp: {
+    capable: true,
+    title,
+    statusBarStyle: "default",
+  },
   openGraph: {
     title,
     description,
@@ -33,6 +38,11 @@ export const metadata: Metadata = {
       },
     ],
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#f1f0ec",
+  viewportFit: "cover",
 };
 
 export default function RootLayout({

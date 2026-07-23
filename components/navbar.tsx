@@ -8,7 +8,7 @@ const navigation = [
 
 export default function Navbar() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 h-20 border-b border-[var(--line)]/70 bg-[var(--paper)]/92 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-50 h-[var(--navbar-height)] border-b border-[var(--line)]/70 bg-[var(--paper)]/92 pt-[var(--safe-area-top)] backdrop-blur-md">
       <div className="mx-auto flex h-full max-w-[1600px] items-center justify-between px-6 sm:px-10 lg:px-14 xl:px-20">
         <a
           href="#home"

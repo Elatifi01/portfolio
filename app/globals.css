@@ -10,6 +10,8 @@
   --accent-soft: #f7dc86;
   --background: var(--paper);
   --foreground: var(--ink);
+  --safe-area-top: env(safe-area-inset-top, 0px);
+  --navbar-height: calc(5rem + var(--safe-area-top));
 }
 
 @theme inline {
@@ -26,7 +28,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: var(--navbar-height);
 }
 
 body {

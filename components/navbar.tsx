@@ -3,6 +3,7 @@ const navigation = [
   { label: "Work", href: "#projects" },
   { label: "Services", href: "#services" },
   { label: "About", href: "#about" },
+  { label: "Testimonials", href: "#testimonials" },
 ];
 
 export default function Navbar() {
@@ -18,7 +19,7 @@ export default function Navbar() {
         </a>
 
         <nav
-          className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-9 md:flex"
+          className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 lg:flex"
           aria-label="Primary navigation"
         >
           {navigation.map((item) => (
@@ -35,13 +36,13 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <a
             href="mailto:elatifi.haitam@gmail.com"
-            className="hidden items-center gap-2 text-xs font-semibold lg:flex"
+            className="hidden items-center gap-2 text-xs font-semibold xl:flex"
           >
             <span className="size-2 rounded-full bg-[var(--accent)]" />
             Let&apos;s work together
           </a>
 
-          <details className="group relative">
+          <details className="group relative lg:hidden">
             <summary className="grid size-11 cursor-pointer list-none place-items-center rounded-full border border-[var(--line)] transition-colors hover:bg-[var(--accent)] [&::-webkit-details-marker]:hidden">
               <span className="sr-only">Open menu</span>
               <span aria-hidden="true" className="flex w-5 flex-col gap-1.5">

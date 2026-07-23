@@ -76,19 +76,19 @@ export default function HeroSection() {
           </a>
         </div>
 
-        <h1 className="hero-title relative z-30 mt-12 text-[clamp(3rem,14.5vw,6rem)] font-black leading-[0.78] tracking-[-0.075em] sm:mt-14 lg:absolute lg:right-[4.5%] lg:top-[33%] lg:mt-0 lg:text-[clamp(5.6rem,8.25vw,8.4rem)]">
+        <h1 className="hero-title relative z-30 mt-12 text-[clamp(3rem,14.5vw,6rem)] font-black leading-[0.78] tracking-[-0.075em] sm:mt-14 lg:absolute lg:right-[2%] lg:top-[33%] lg:mt-0 lg:text-[clamp(4.6rem,7.2vw,7.5rem)]">
           <span className="block whitespace-nowrap">clean code.</span>
           <span className="block whitespace-nowrap">clear impact.</span>
         </h1>
 
-        <div className="hero-portrait relative left-1/2 z-10 mt-3 w-[min(112vw,38rem)] -translate-x-1/2 sm:mt-0 lg:absolute lg:bottom-0 lg:w-[min(52vw,47rem)]">
+        <div className="hero-portrait relative left-1/2 z-10 mt-10 w-[min(104vw,34rem)] -translate-x-1/2 sm:mt-6 lg:absolute lg:bottom-[-5rem] lg:mt-0 lg:w-[min(46vw,44rem)]">
           <Image
-            src="/assets/haitam-editorial.png"
+            src="/assets/haitam-editorial_copy.png"
             alt="Haitam El Atifi, full-stack developer"
             width={1122}
             height={1402}
             priority
-            sizes="(max-width: 1023px) 100vw, 52vw"
+            sizes="(max-width: 1023px) 100vw, 46vw"
             className="h-auto w-full mix-blend-multiply"
           />
         </div>

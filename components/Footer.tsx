@@ -6,7 +6,7 @@ export default function Footer() {
     >
       <div className="mx-auto max-w-[1460px]">
         <p className="text-xs font-bold uppercase tracking-[0.24em]">
-          04 / Start a project
+          05 / Start a project
         </p>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-12 border-b border-black/25 pb-20 lg:flex-row lg:items-end">

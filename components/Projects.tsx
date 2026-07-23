@@ -3,6 +3,18 @@ import Image from "next/image";
 const projects = [
   {
     number: "01",
+    category: "Management platform",
+    title: "HSE Audit",
+    description:
+      "A clear, structured system for managing safety protocols, incident reporting, and environmental compliance.",
+    image: "/assets/hsepage.png",
+    imageWidth: 1896,
+    imageHeight: 915,
+    href: "https://audithse.isi-dev.com/",
+    tags: ["Full stack", "Dashboards", "UX"],
+  },
+  {
+    number: "02",
     category: "Desktop application",
     title: "Hospital Management System",
     description:
@@ -14,7 +26,7 @@ const projects = [
     tags: ["Java", "OOP", "Data management"],
   },
   {
-    number: "02",
+    number: "03",
     category: "Web application",
     title: "SkillTracker",
     description:
@@ -24,18 +36,6 @@ const projects = [
     imageHeight: 890,
     href: "https://github.com/Elatifi01/Capstone_Project",
     tags: ["React", "Laravel", "Product design"],
-  },
-  {
-    number: "03",
-    category: "Management platform",
-    title: "HSE Audit",
-    description:
-      "A clear, structured system for managing safety protocols, incident reporting, and environmental compliance.",
-    image: "/assets/hse.png",
-    imageWidth: 1896,
-    imageHeight: 915,
-    href: "https://audithse.isi-dev.com/",
-    tags: ["Full stack", "Dashboards", "UX"],
   },
 ];
 

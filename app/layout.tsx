@@ -22,7 +22,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Haitam El Atifi",
-    // Add app/opengraph-image.jpg when the final social image is ready.
+    images: [
+      {
+        url: "/assets/h.elatifi.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Haitam El Atifi, full-stack developer",
+      },
+    ],
   },
 };
 

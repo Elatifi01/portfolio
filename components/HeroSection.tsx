@@ -81,15 +81,19 @@ export default function HeroSection() {
           <span className="block whitespace-nowrap">clear impact.</span>
         </h1>
 
-        <div className="hero-portrait relative left-1/2 z-10 mt-10 w-[min(104vw,34rem)] -translate-x-1/2 sm:mt-6 lg:absolute lg:bottom-[-5rem] lg:mt-0 lg:w-[min(46vw,44rem)]">
+        <div className="hero-portrait relative left-1/2 z-10 mt-16 w-[min(104vw,34rem)] -translate-x-1/2 sm:mt-12 lg:absolute lg:bottom-[-9rem] lg:mt-0 lg:w-[min(46vw,44rem)]">
+          <div
+            aria-hidden="true"
+            className="absolute left-1/2 top-[4%] z-0 aspect-square w-[76%] -translate-x-1/2 rounded-full bg-[var(--accent)]"
+          />
           <Image
-            src="/assets/haitam-editorial.png"
+            src="/assets/haitam-cutout.png"
             alt="Haitam El Atifi, full-stack developer"
             width={1122}
             height={1402}
             priority
             sizes="(max-width: 1023px) 100vw, 46vw"
-            className="h-auto w-full mix-blend-multiply"
+            className="relative z-10 h-auto w-full"
           />
         </div>
 

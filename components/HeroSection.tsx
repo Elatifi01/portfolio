@@ -54,7 +54,10 @@ export default function HeroSection() {
       />
 
       <div className="relative mx-auto min-h-[calc(100svh-5rem)] max-w-[1600px] px-6 sm:px-10 lg:px-14 xl:px-20">
-        <div className="hero-copy relative z-30 max-w-xs pt-12 sm:pt-16 lg:absolute lg:left-[6%] lg:top-[21%] lg:pt-0">
+        <div
+          className="hero-copy relative z-30 max-w-xs pt-12 sm:pt-16 lg:absolute lg:left-[6%] lg:top-[21%] lg:pt-0"
+          data-scroll-reveal="intro"
+        >
           <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.24em] text-[var(--muted)]">
             Full-stack developer
           </p>
@@ -76,12 +79,20 @@ export default function HeroSection() {
           </a>
         </div>
 
-        <h1 className="hero-title relative z-30 mt-12 text-[clamp(3rem,14.5vw,6rem)] font-black leading-[0.78] tracking-[-0.075em] sm:mt-14 lg:absolute lg:right-[2%] lg:top-[33%] lg:mt-0 lg:text-[clamp(4.6rem,7.2vw,7.5rem)]">
+        <h1
+          className="hero-title relative z-30 mt-12 text-[clamp(3rem,14.5vw,6rem)] font-black leading-[0.78] tracking-[-0.075em] sm:mt-14 lg:absolute lg:right-[2%] lg:top-[33%] lg:mt-0 lg:text-[clamp(4.6rem,7.2vw,7.5rem)]"
+          data-scroll-reveal="intro"
+          data-reveal-order="1"
+        >
           <span className="block whitespace-nowrap">clean code.</span>
           <span className="block whitespace-nowrap">clear impact.</span>
         </h1>
 
-        <div className="hero-portrait relative left-1/2 z-10 mt-24 w-[min(104vw,34rem)] -translate-x-1/2 sm:mt-20 lg:absolute lg:bottom-[-14rem] lg:mt-0 lg:w-[min(46vw,44rem)]">
+        <div
+          className="hero-portrait relative left-1/2 z-10 mt-24 w-[min(104vw,34rem)] -translate-x-1/2 sm:mt-20 lg:absolute lg:bottom-[-14rem] lg:mt-0 lg:w-[min(46vw,44rem)]"
+          data-scroll-reveal="content"
+          data-reveal-order="2"
+        >
           <div
             aria-hidden="true"
             className="absolute left-1/2 top-[4%] z-0 aspect-square w-[76%] -translate-x-1/2 rounded-full bg-[var(--accent)]"
@@ -97,7 +108,11 @@ export default function HeroSection() {
           />
         </div>
 
-        <div className="relative z-30 -mt-8 flex items-end justify-between gap-6 pb-8 sm:-mt-12 lg:absolute lg:inset-x-[3.5%] lg:bottom-8 lg:mt-0 lg:pb-0">
+        <div
+          className="relative z-30 -mt-8 flex items-end justify-between gap-6 pb-8 sm:-mt-12 lg:absolute lg:inset-x-[3.5%] lg:bottom-8 lg:mt-0 lg:pb-0"
+          data-scroll-reveal="content"
+          data-reveal-order="3"
+        >
           <div className="flex items-center gap-2.5">
             {socialLinks.map((link) => (
               <a

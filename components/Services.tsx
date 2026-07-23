@@ -32,7 +32,10 @@ export default function Services() {
       id="services"
     >
       <div className="mx-auto max-w-[1460px]">
-        <header className="grid gap-8 border-b border-white/20 pb-12 md:grid-cols-[0.55fr_1.45fr] md:items-end">
+        <header
+          className="grid gap-8 border-b border-white/20 pb-12 md:grid-cols-[0.55fr_1.45fr] md:items-end"
+          data-scroll-reveal="intro"
+        >
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-white/50">
             02 / What I do
           </p>
@@ -47,9 +50,11 @@ export default function Services() {
         </header>
 
         <div className="grid md:grid-cols-2 xl:grid-cols-4">
-          {services.map((service) => (
+          {services.map((service, index) => (
             <article
               key={service.title}
+              data-scroll-reveal="content"
+              data-reveal-order={index + 1}
               className="group flex min-h-80 flex-col justify-between border-b border-white/20 px-0 py-9 transition-colors duration-300 hover:bg-[var(--accent)] hover:text-[var(--ink)] md:min-h-96 md:border-r md:px-8 md:first:pl-0 md:nth-[2]:border-r-0 xl:border-b-0 xl:nth-[2]:border-r xl:last:border-r-0 xl:last:pr-0"
             >
               <div className="flex items-start justify-between">

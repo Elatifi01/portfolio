@@ -26,7 +26,10 @@ export default function About() {
       id="about"
     >
       <div className="mx-auto max-w-[1460px]">
-        <header className="grid gap-10 md:grid-cols-[0.55fr_1.45fr]">
+        <header
+          className="grid gap-10 md:grid-cols-[0.55fr_1.45fr]"
+          data-scroll-reveal="intro"
+        >
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-[var(--muted)]">
             03 / How I work
           </p>
@@ -45,9 +48,11 @@ export default function About() {
         </header>
 
         <div className="mt-20 grid border-t border-[var(--line)] md:grid-cols-3">
-          {principles.map((principle) => (
+          {principles.map((principle, index) => (
             <article
               key={principle.title}
+              data-scroll-reveal="content"
+              data-reveal-order={index + 1}
               className="border-b border-[var(--line)] py-9 md:min-h-80 md:border-r md:px-8 md:first:pl-0 md:last:border-r-0 md:last:pr-0"
             >
               <span className="text-sm font-bold text-[var(--muted)]">

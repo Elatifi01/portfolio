@@ -47,7 +47,10 @@ export default function Projects() {
       id="projects"
     >
       <div className="mx-auto max-w-[1460px]">
-        <header className="grid gap-8 border-b border-[var(--line)] pb-12 md:grid-cols-[0.55fr_1.45fr] md:items-end">
+        <header
+          className="grid gap-8 border-b border-[var(--line)] pb-12 md:grid-cols-[0.55fr_1.45fr] md:items-end"
+          data-scroll-reveal="intro"
+        >
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-[var(--muted)]">
             01 / Selected work
           </p>
@@ -77,7 +80,10 @@ export default function Projects() {
                   : "bg-[var(--surface)]"
               }`}
             >
-              <div className="flex min-h-14 items-center justify-between border-b border-[var(--line)] px-5 sm:px-7">
+              <div
+                className="flex min-h-14 items-center justify-between border-b border-[var(--line)] px-5 sm:px-7"
+                data-scroll-reveal="content"
+              >
                 <span className="text-sm font-bold">
                   Project {project.number}
                 </span>
@@ -87,7 +93,11 @@ export default function Projects() {
               </div>
 
               <div className="grid gap-8 p-6 sm:p-8 lg:grid-cols-[0.62fr_1.38fr] lg:gap-16 xl:p-12">
-                <div className="flex flex-col justify-between gap-10 lg:py-3">
+                <div
+                  className="flex flex-col justify-between gap-10 lg:py-3"
+                  data-scroll-reveal="content"
+                  data-reveal-order="1"
+                >
                   <div>
                     <h3 className="max-w-xl text-4xl font-black leading-[0.94] tracking-[-0.055em] sm:text-5xl">
                       {project.title}
@@ -127,6 +137,8 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`View ${project.title}`}
+                  data-scroll-reveal="content"
+                  data-reveal-order="2"
                   className={`relative self-center overflow-hidden border border-[var(--line)] bg-[var(--paper)] p-3 sm:p-5 ${
                     index % 2 === 1 ? "lg:rotate-[0.35deg]" : ""
                   }`}

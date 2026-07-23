@@ -29,7 +29,10 @@ export default function Testimonials() {
       id="testimonials"
     >
       <div className="mx-auto max-w-[1460px]">
-        <header className="grid gap-8 border-b border-[var(--line)] pb-12 md:grid-cols-[0.55fr_1.45fr] md:items-end">
+        <header
+          className="grid gap-8 border-b border-[var(--line)] pb-12 md:grid-cols-[0.55fr_1.45fr] md:items-end"
+          data-scroll-reveal="intro"
+        >
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-[var(--muted)]">
             04 / Testimonials
           </p>
@@ -44,9 +47,11 @@ export default function Testimonials() {
         </header>
 
         <div className="grid border-b border-[var(--line)] md:grid-cols-3">
-          {testimonials.map((testimonial) => (
+          {testimonials.map((testimonial, index) => (
             <article
               key={testimonial.name}
+              data-scroll-reveal="content"
+              data-reveal-order={index + 1}
               className="group flex min-h-[25rem] flex-col justify-between border-b border-[var(--line)] px-0 py-9 transition-colors duration-300 hover:bg-[var(--accent)] md:border-r md:px-8 md:last:border-r-0"
             >
               <span

@@ -59,38 +59,57 @@ button {
   outline-offset: 4px;
 }
 
-@keyframes hero-rise {
+@keyframes content-reveal-in {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translate3d(0, var(--reveal-distance, 2.5rem), 0);
   }
+
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }
 
-@keyframes hero-scale {
-  from {
-    opacity: 0;
-    transform: translateY(4%) scale(0.96);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+.scroll-reveal-ready [data-scroll-reveal] {
+  opacity: 0;
+  transform: translate3d(0, var(--reveal-distance, 2.5rem), 0);
+  transition:
+    opacity 320ms ease,
+    transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.hero-copy {
-  animation: hero-rise 700ms 120ms both cubic-bezier(0.22, 1, 0.36, 1);
+.scroll-reveal-ready [data-scroll-reveal="intro"] {
+  --reveal-distance: 2rem;
 }
 
-.hero-title {
-  animation: hero-rise 750ms 230ms both cubic-bezier(0.22, 1, 0.36, 1);
+.scroll-reveal-ready [data-scroll-reveal="content"] {
+  --reveal-distance: 3rem;
 }
 
-.hero-portrait {
-  animation: hero-scale 900ms 80ms both cubic-bezier(0.22, 1, 0.36, 1);
+.scroll-reveal-ready
+  [data-scroll-reveal].scroll-reveal-content-visible {
+  animation-name: content-reveal-in;
+  animation-duration: 720ms;
+  animation-delay: var(--reveal-delay, 0ms);
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-reveal-order="1"] {
+  --reveal-delay: 90ms;
+}
+
+[data-reveal-order="2"] {
+  --reveal-delay: 180ms;
+}
+
+[data-reveal-order="3"] {
+  --reveal-delay: 270ms;
+}
+
+[data-reveal-order="4"] {
+  --reveal-delay: 360ms;
 }
 
 .scroll-reveal-ready .scroll-reveal-section {
@@ -140,10 +159,13 @@ button {
     scroll-behavior: auto;
   }
 
-  .hero-copy,
-  .hero-title,
-  .hero-portrait {
+  .scroll-reveal-ready [data-scroll-reveal],
+  .scroll-reveal-ready
+    [data-scroll-reveal].scroll-reveal-content-visible {
+    opacity: 1;
+    transform: none;
     animation: none;
+    transition: none;
   }
 
   .scroll-reveal-ready .scroll-reveal-section,

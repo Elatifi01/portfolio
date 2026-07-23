@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Haitam El Atifi",
     images: [
       {
-        url: "/assets/h.elatifi.jpeg",
+        url: "/assets/h.elatifi.png",
         width: 1200,
         height: 630,
         alt: "Haitam El Atifi, full-stack developer",

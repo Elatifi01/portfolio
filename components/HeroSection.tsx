@@ -83,7 +83,7 @@ export default function HeroSection() {
 
         <div className="hero-portrait relative left-1/2 z-10 mt-10 w-[min(104vw,34rem)] -translate-x-1/2 sm:mt-6 lg:absolute lg:bottom-[-5rem] lg:mt-0 lg:w-[min(46vw,44rem)]">
           <Image
-            src="/assets/haitam-editorial_copy.png"
+            src="/assets/haitam-editorial.png"
             alt="Haitam El Atifi, full-stack developer"
             width={1122}
             height={1402}

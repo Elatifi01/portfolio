@@ -93,6 +93,35 @@ button {
   animation: hero-scale 900ms 80ms both cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+@media (min-width: 1024px) {
+  .project-stack {
+    position: relative;
+  }
+
+  .project-stack::after {
+    display: block;
+    height: 18vh;
+    content: "";
+  }
+
+  .project-stack-card {
+    position: sticky;
+    top: var(--stack-top);
+    z-index: var(--stack-z);
+    margin-bottom: 18vh;
+    box-shadow:
+      0 -1px 0 var(--line),
+      0 -18px 42px rgb(23 23 23 / 7%);
+    transform: translateZ(0);
+    transform-origin: center top;
+    will-change: transform;
+  }
+
+  .project-stack-card:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
